@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina de memes</title>
+    <link rel="stylesheet" href="css/Estilo.css" type="text/css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+     <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+   
+</head>
+<body>
+    <header>
+        <h1>
+            <a>Momazos</a>
+        </h1>
+    </header>
+    <section class="row conteiner-fluid" id="todo">
+        <aside id="lateral" class="col-sm-3">
+            <select id="temas"> 
+				<option value="bienvenida" selected>Categoria</option>
+				<option value="memesp">Perritos</option> 
+				<option value="memess">Gatitos</option>
+                <option value="memest">Extras</option>
+            </select>
+            <br>
+            <form>
+                <input type="text" id="palabra" placeholder="Añade texto a tu meme"/>
+                <br>
+                <br>
+                <input type="button" value="Mostrar" onClick="textomomazo()"/><br><br>
+                <p>Color de fondo del meme</p>
+                <input type="color" id="colorf">
+                <p>Color de letra meme</p>
+                <input type="color" id="colorl">
+                <br><br>
+                <input type="button" value="color" onClick="colores()"/>
+            </form>
+        </aside>  
+        <section id="principal" class="col-sm-9">
+            <article id="bienvenida">
+                <h1> Bienvenido al Creador de Memes :v</h1>
+            </article>
+            <p id="resultado"></p>
+            <article id="imagenf" class="contenedor">
+                <img id="foto" src="img/gris.png" name="foto" class="foto">
+            </article>
+            <article id="memesp" class="contenedor">
+                <img src="img/p1.jpeg" alt="" class="galeria" onclick="fotografia('p1')">
+                <img src="img/p2.jpeg" alt="" class="galeria" onclick="fotografia('p2')">
+                <img src="img/p3.jpeg" alt="" class="galeria" onclick="fotografia('p3')">
+            </article>
+            <article id="memess" class="contenedor">
+                <img src="img/g1.jpeg" alt="" class="galeria" onclick="fotografia('g1')">
+                <img src="img/g2.jpeg" alt="" class="galeria" onclick="fotografia('g2')">
+                <img src="img/g3.jpeg" alt="" class="galeria" onclick="fotografia('g3')">
+            </article>
+            <article id="memest" class="contenedor">
+                <img src="img/u1.jpeg" alt="" class="galeria" onclick="fotografia('u1')">
+                <img src="img/u2.jpeg" alt="" class="galeria" onclick="fotografia('u2')">
+                <img src="img/u3.jpeg" alt="" class="galeria" onclick="fotografia('u3')">
+            </article>
+            </section>
+    </section>
+     <script src="js/actividades.js"></script>
+<footer>
+    <p>Me quedo muy grande muchachos</p>
+</footer>
+</body>
+</html>
+

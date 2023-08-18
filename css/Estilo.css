@@ -1,0 +1,130 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+}
+
+html{
+	font-size:16px;
+}
+
+#todo{
+    height:500px;}
+header{
+	background-color:#ff0000;
+	text-align:center;
+	color:#fff;
+ }
+	header a{
+		text-decoration:none;
+		color:#fff;
+		display:block;
+		padding:10px 0px;
+		font-size:1.5rem;
+	}
+	
+	
+	header a:hover{
+		text-decoration:none;
+		color:rgba(255,255,255,0.4);
+	}
+		
+section{
+	background-color: #b20000;
+	font-size:1.2rem;
+	vertical-align: center;
+	align-items: center;
+}
+
+#resultado{
+	text-align: center;
+}
+
+form{
+	padding: 10px;
+}
+
+select{
+	width: 100%;
+}
+
+input{
+	margin: 3px 3px;
+}
+
+#lateral{
+    background-color: #ff4d00;
+    text-align:center;
+	align-items: center;
+	justify-content: center;
+    padding: 20px 30px; 
+	height: 100%;
+}
+select{
+	display:block;
+	margin:0px auto;
+}
+.contenedor{
+		width:99%;
+		border:solid 1px #7d0101;
+		padding:10px;
+		margin:10px auto;
+		text-align:center;
+		align-items: center;
+		display: none;
+	}
+
+	#resultado{
+		transition: all 0.4s ease-in-out;
+	}
+
+	.res{
+		width:99%;
+		line-height:25px;
+		border:solid 1px #FFE459;
+		padding:10px;
+		margin:10px auto;
+	}
+	
+	
+    footer{
+        background-color:#600000;
+        color: #fff;
+        padding: 20px 0px;
+        text-align: center;
+    }
+    #btnSi{
+        background-color:#11052C;
+        font-size:16px;
+        color: #FFE459;
+        padding: 5px;
+        border-radius: 2px;
+    }
+	#tipolista{
+		list-style-type: square;
+	}
+
+
+	.otra{
+		background-color:#3D087B;
+		color: #FFE459;
+		border: solid 4px #C83839;
+		border-radius: 7px 0px;
+		text-align: center;
+		width: 60px;
+
+	}
+
+	.foto{
+        margin: 10px auto; 
+        width: 300px;
+        box-shadow: 2px 2px 2px #c8c6c6;
+        border: 1px solid #c36839;
+        display:block;
+        background-color: #fff;
+    }
+    .galeria{
+        display: inline-block;
+        width: 50px;
+        background-color: #fff;
+    }
